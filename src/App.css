@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+/* Estilos Globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --light: #ffffff;
+  --dark: #0f0f0f;
+  --red: #ff0000;
+  --dark-grey: #606060;
+  --grey-100: #e5e5e5;
+  --grey-200: #f2f2f2;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
+  background-color: var(--grey-200);
+  font-size: 14pt;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
+}
+
+/* Fixa o footer no fim da página */
+#root {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* Estilos do Footer */
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.footer {
+  background-color: var(--grey-200);
+  font-size: 9pt;
+  padding: 0px 0px 35px 0px;
+  font-weight: 500;
+  margin-top: auto;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px;
+  border-top: 2px solid var(--grey-100);
+}
+
+.iconsContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex: 1;
+}
+
+.iconsContainer a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  gap: 3px;
+}
+
+.iconsContainer .navIcons {
+  width: 24px;
+}
+
+.addContainer {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex: 1;
 }
 
-.App-link {
-  color: #61dafb;
+.addContainer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.addContainer .navIcons {
+  width: 31.85px;
+}
+
+@media (max-width: 300px) {
+  .footerContainer {
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
   }
 }

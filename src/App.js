@@ -1,10 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
-    <div className="App">
-      
+    <div className="container">
+      <Footer />
     </div>
   );
 }
