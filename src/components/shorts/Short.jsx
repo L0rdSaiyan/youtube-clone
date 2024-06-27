@@ -1,4 +1,4 @@
-import "../../App.css";
+import "./Shorts.css";
 import More from "../../assets/More.png";
 
 export default function Short() {
