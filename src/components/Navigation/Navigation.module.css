@@ -1,0 +1,47 @@
+.nav {
+  padding: 10px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.list1 {
+  font-size: 14px;
+  font-family: Poppins;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  gap: 10px;
+}
+
+.list2 {
+  font-size: 14px;
+  font-family: Poppins, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.all {
+  background-color: black;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.toyou {
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, #38686e, #741b7a, #e18185);
+}
