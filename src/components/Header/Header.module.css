@@ -1,0 +1,31 @@
+.header  {
+  padding: 20px;
+}
+
+.headertop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.youtube_logo {
+  max-width: 100px; 
+  height: auto;
+  cursor: pointer;
+}
+
+.navbar_icons {
+  display: flex;
+  gap: 15px; /* Spacing between icons */
+}
+
+.navbar_icons button{
+  border: none;
+  cursor: pointer;
+  background: transparent; 
+}
+.profile {
+  width: 25px; 
+  height: 25px;
+  cursor: pointer;
+}
